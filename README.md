@@ -1,51 +1,87 @@
-# Bases de Dades: Model Entitat-Relació
+# Bases de Datos: Modelo Entidad-Relación
 
+## Estructura del Curso
 
-## Course Structure
+Cada carpeta dentro de `data/` (por ejemplo, `data/3/`, `data/4/`, etc.) contiene un archivo `index.html` y los recursos relacionados. El número de la carpeta corresponde al orden de los temas tal como se presentan en el curso.
 
-Each folder inside `data/` (e.g., `data/3/`, `data/4/`, etc.) contains an `index.html` file and related assets. The folder number corresponds to the order of the topics as presented in the course.
+### Temas Principales
 
-### Main Topics Covered
+- **Objectius i coneixements previs**:  
+  Se presentan los objetivos del curso y los conocimientos que se esperan de los estudiantes antes de comenzar, como nociones básicas de bases de datos y lógica.
 
-- **Objectius i coneixements previs**: Course objectives and prerequisites.
-- **1. Introducció**: Introduction to the E/R model.
-- **2. Exemple**: Example to illustrate the concepts.
-- **3. Les Entitats del Model E/R**: Entities in the E/R model.
-  - **3.1 Entitats**: Definition and examples of entities.
-  - **3.2 Atributs**: Attributes of entities.
-  - **3.3 Dominis**: Domains of attributes.
-- **4. Les Relacions del Model E/R**: Relationships in the E/R model.
-  - **4.1 Relació**: Definition of relationships.
-  - **4.2 Atributs de Relació**: Attributes of relationships.
-  - **4.3 Tipus de Relació o Cardinalitat**: Types of relationships and cardinality.
-- **5. Relacions de grau major que dos**: Relationships of degree greater than two.
-- **6. Model E/R Estès**: Extended E/R model.
-  - **6.1 Cardinalitat màxima i mínima. Participació total.**
-  - **6.2 Entitats dèbils**: Weak entities.
-  - **6.3 Generalització i herència**: Generalization and inheritance.
-- **7. Restriccions externes**: External constraints.
-- **Resum**: Summary of the course.
-- **Exercicis**: Exercises for practice.
+- **1. Introducció**:  
+  Introducción al modelo Entidad-Relación. Se explica su origen, utilidad en el diseño conceptual de bases de datos y cómo facilita la representación de la información de forma gráfica.
 
-## Navigation
+- **2. Exemple**:  
+  Se expone un ejemplo práctico que sirve como hilo conductor del curso. Se modela una situación real usando entidades, relaciones y atributos, lo que ayuda a comprender mejor los conceptos teóricos.
 
-- Open `data/3/index.html` in your browser to start with the main index.
-- All internal links have been updated to point to the correct local files.
-- Each topic and subtopic can be accessed via the navigation menu in the HTML files.
+- **3. Les Entitats del Model E/R**:  
+  Describe qué son las entidades, cómo se representan y su papel central en el modelo.
 
-## Script: Link Correction
+  - **3.1 Entitats**:  
+    Definición formal de entidad. Se presentan ejemplos de entidades y cómo identificarlas en el mundo real.
 
-A Python script (`script.py`) is included to automatically update all internal links in the HTML files to point to the correct local paths. This ensures seamless offline navigation.
+  - **3.2 Atributs**:  
+    Introducción a los atributos, que son propiedades o características de las entidades. Se analizan atributos simples, compuestos, derivados y multivaluados.
 
-### Usage
+  - **3.3 Dominis**:  
+    Se explican los dominios de los atributos, es decir, los conjuntos de valores válidos que puede tomar un atributo.
 
-1. Make sure you have Python 3 installed.
-2. Run the script from the root of the repository:
+- **4. Les Relacions del Model E/R**:  
+  Se abordan las relaciones entre entidades, cómo se modelan y qué tipo de información representan.
+
+  - **4.1 Relació**:  
+    Definición de relación como una asociación entre dos o más entidades.
+
+  - **4.2 Atributs de Relació**:  
+    Se detallan los atributos que pueden tener las relaciones para añadir información adicional sobre la conexión entre entidades.
+
+  - **4.3 Tipus de Relació o Cardinalitat**:  
+    Estudia la cardinalidad (uno a uno, uno a muchos, muchos a muchos) y cómo afecta al diseño del modelo.
+
+- **5. Relacions de grau major que dos**:  
+  Explicación de relaciones de grado superior a dos (también llamadas relaciones ternarias o n-arias), y su modelado correcto.
+
+- **6. Model E/R Estès**:  
+  Se amplía el modelo E/R básico con conceptos más avanzados.
+
+  - **6.1 Cardinalitat màxima i mínima. Participació total.**  
+    Se introduce el concepto de participación total (obligatoriedad de la relación) y se define la cardinalidad mínima y máxima.
+
+  - **6.2 Entitats dèbils**:  
+    Definición y características de las entidades débiles, que dependen de otras entidades para existir y tienen claves parciales.
+
+  - **6.3 Generalització i herència**:  
+    Se presenta la generalización como proceso para abstraer entidades comunes en una entidad superior. Se discute también la herencia de atributos y relaciones.
+
+- **7. Restriccions externes**:  
+  Se abordan restricciones que no se pueden representar gráficamente en el modelo E/R pero que son necesarias, como reglas de negocio.
+
+- **Resum**:  
+  Recapitulación de todos los conceptos aprendidos en el curso, organizada de forma clara y esquemática.
+
+- **Exercicis**:  
+  Conjunto de ejercicios prácticos para reforzar los conocimientos adquiridos a lo largo del curso.
+
+## Navegación
+
+- Abre `data/3/index.html` en tu navegador para empezar desde el índice principal.
+- Todos los enlaces internos han sido actualizados para apuntar a los archivos locales correctos.
+- Cada tema y subtema se puede acceder desde el menú de navegación en los archivos HTML.
+
+## Script: Corrección de Enlaces
+
+Se incluye un script en Python (`script.py`) que actualiza automáticamente todos los enlaces internos de los archivos HTML para que funcionen correctamente de forma local y offline.
+
+### Instrucciones de uso
+
+1. Asegúrate de tener Python 3 instalado.
+2. Ejecuta el script desde la raíz del repositorio:
    ```sh
    python script.py
    ```
-3. The script will update all `index.html` files in the `data/` directory to use absolute file paths for navigation.
+3. El script actualizará todos los archivos `index.html` dentro del directorio `data/` utilizando rutas absolutas a archivos locales.
 
-## License
+## Licencia
 
-The course content is published under the [Creative Commons Reconocimiento No comercial Compartir igual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/) license.
+El contenido de este curso está publicado bajo la licencia [Creative Commons Reconocimiento No Comercial Compartir Igual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
