@@ -1,6 +1,5 @@
 # Bases de Dades: Model Entitat-Relació
 
-This repository contains a complete offline copy of a course on the Entity-Relationship (E/R) database model, originally hosted on the Aules GVA platform. The course is structured into multiple HTML files, each representing a section or topic, and organized into numbered folders under the `data/` directory.
 
 ## Course Structure
 
