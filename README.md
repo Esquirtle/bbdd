@@ -69,19 +69,3 @@ Cada carpeta dentro de `data/` (por ejemplo, `data/3/`, `data/4/`, etc.) contien
 - Todos los enlaces internos han sido actualizados para apuntar a los archivos locales correctos.
 - Cada tema y subtema se puede acceder desde el menú de navegación en los archivos HTML.
 
-## Script: Corrección de Enlaces
-
-Se incluye un script en Python (`script.py`) que actualiza automáticamente todos los enlaces internos de los archivos HTML para que funcionen correctamente de forma local y offline.
-
-### Instrucciones de uso
-
-1. Asegúrate de tener Python 3 instalado.
-2. Ejecuta el script desde la raíz del repositorio:
-   ```sh
-   python script.py
-   ```
-3. El script actualizará todos los archivos `index.html` dentro del directorio `data/` utilizando rutas absolutas a archivos locales.
-
-## Licencia
-
-El contenido de este curso está publicado bajo la licencia [Creative Commons Reconocimiento No Comercial Compartir Igual 3.0](http://creativecommons.org/licenses/by-nc-sa/3.0/).
